@@ -5,7 +5,7 @@ import {
     Redirect,
     Switch
 } from "react-router-dom";
-import Home from "../Routes/Home";
+import Home from "../Routes/Home"; //Home의 index를 먼저 불러오고, index가 container를 불러오고, container가 presenter를 불러온다
 import Search from "../Routes/Search";
 import TV from "../Routes/TV";
 import Header from "./Header";
