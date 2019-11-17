@@ -9,6 +9,8 @@ const Header = styled.header`
   left: 0;
   width: 100%;
   height: 50px;
+  font-size: 15px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   
