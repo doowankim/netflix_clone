@@ -18,6 +18,12 @@ export const moviesApi = {
             params: {
                 append_to_response: "videos"
             }
+        }),
+    search: term =>
+        api.get("search/movie", {
+            params: {
+                query: encodeURIComponent(term) //무작위로 입력하는 Term을 encode 해준다
+            }
         })
 };
 
@@ -29,6 +35,12 @@ export const tvApi = {
         api.get(`tv/${id}`, {
             params: {
                 append_to_response: "videos"
+            }
+        }),
+    search: term =>
+        api.get("search/tv", {
+            params: {
+                query: encodeURIComponent(term)
             }
         })
 };
