@@ -5,13 +5,9 @@ import HomePresenter from "./HomePresenter";
 export default class extends Component {
     render() {
         return (
-            <HomePresenter
-                popular={}
-                upcoming={}
-                nowPlaying={}
-                loading={}
-                error={}
-            />
+            <div>
+                <h1>dlskafj</h1>
+            </div>
         );
     }
 }

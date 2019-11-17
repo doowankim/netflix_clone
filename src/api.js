@@ -7,7 +7,6 @@ const api = axios.create({
         api_key: "737b40b03377f73eeb19c912b576f026",
         language: "en-US"
     }
-
 });
 
 export const moviesApi = {
