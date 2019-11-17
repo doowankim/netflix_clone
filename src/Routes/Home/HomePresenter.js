@@ -22,14 +22,14 @@ const HomePresenter = ({ popular, upcoming, nowPlaying, loading, error }) =>
                 </Section>
             )}
             {popular && popular.length > 0 && (
-                <Section title="Popular">
+                <Section title="Movie Popular">
                     {popular.map(movie =>
                         <span key={movie.id}>{movie.title}</span>
                     )}
                 </Section>
             )}
             {upcoming && upcoming.length > 0 && (
-                <Section title="Upcoming">
+                <Section title="Movie Upcoming">
                     {upcoming.map(movie =>
                         <span key={movie.id}>{movie.title}</span>
                     )}
