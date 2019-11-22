@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   font-size: 12px;
+  padding-bottom: 20px;
 `;
 
 const Image = styled.div`
