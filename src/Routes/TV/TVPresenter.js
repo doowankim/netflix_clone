@@ -12,7 +12,7 @@ const Container = styled.div`
 
 const TVPresenter = ({popular, topRated, airingToday, loading, error}) =>
     loading ? (
-        <loader />
+        <Loader />
     ) : (
         <Container>
             {popular && popular.length > 0 && (
@@ -25,7 +25,6 @@ const TVPresenter = ({popular, topRated, airingToday, loading, error}) =>
                             year={tv.first_air_date}
                             rating={tv.vote_average}
                             imageurl={tv.poster_path}
-                            isTv={true}
                         />
                     )}
                 </Section>
@@ -40,7 +39,6 @@ const TVPresenter = ({popular, topRated, airingToday, loading, error}) =>
                             year={tv.first_air_date}
                             rating={tv.vote_average}
                             imageurl={tv.poster_path}
-                            isTv={true}
                         />
                     )}
                 </Section>
@@ -55,7 +53,6 @@ const TVPresenter = ({popular, topRated, airingToday, loading, error}) =>
                             year={tv.first_air_date}
                             rating={tv.vote_average}
                             imageurl={tv.poster_path}
-                            isTv={true}
                         />
                     )}
                 </Section>

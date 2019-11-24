@@ -8,14 +8,14 @@ export default class extends Component {
         movieResults: null,
         tvResults: null,
         error: null,
-        loading: true,
+        loading: false,
         searchTerm: ""
     };
 
     handleSubmit = () => {
         const { searchTerm } = this.state;
-        if(searchTerm !== ""){
-
+        if(searchTerm !== ""){ //검색창이 빈칸이 아니라면 searchByTerm을 네트워크에 태움
+            this.searchByTerm();
         }
     };
 
@@ -41,17 +41,27 @@ export default class extends Component {
         }
     };
 
+    // 검색창에 키워드를 쓸 수 있게 함
+    updateTerm = event => {
+        const {
+            target: { value }
+        } = event;
+        this.setState({
+            searchTerm: value
+        });
+    };
 
     render() {
         const {movieResults, tvResults, error, loading, searchTerm} = this.state;
         return (
             <SearchPresenter
                 loading={loading}
-                handleSubmit={}
+                handleSubmit={this.handleSubmit}
                 movieResults={movieResults}
                 tvResults={tvResults}
                 error={error}
                 searchTerm={searchTerm}
+                updateTerm={this.updateTerm}
             />
         );
     }
