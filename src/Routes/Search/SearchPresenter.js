@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Loader from "../../component/Loader";
 import Section from "../../component/Section";
 import Poster from "../../component/Poster";
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -25,6 +26,9 @@ class SearchPresenter extends Component {
         const {movieResults, tvResults, error, loading, searchTerm, handleSubmit, updateTerm} = this.props;
         return (
             <Container>
+                <Helmet>
+                    <title>Search | Netflix_clone</title>
+                </Helmet>
                 <Form onSubmit={handleSubmit}>
                     <Input
                         placeholder="Search Movies or TV Shows..." //html의 input

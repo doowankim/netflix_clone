@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 import Loader from "../../component/Loader";
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   height: calc(100vh - 50px); //calc: 계산식
@@ -66,10 +67,22 @@ const Overview = styled.p`
 `;
 
 const DetailPresenter = ({result, loading, error}) =>
+
     loading ? (
-        <Loader />
+        <>
+            <Helmet>
+                <title>Loading | Netflix_clone</title>
+            </Helmet>
+            <Loader />
+        </>
     ) : (
         <Container>
+            <Helmet>
+                <title>
+                    {result.original_title ? result.original_title : result.original_name}{" "}
+                    | Netflix_clone
+                </title>
+            </Helmet>
             <Backdrop bgImage={`https://image.tmdb.org/t/p/original${result.backdrop_path}`} />
             <Content>
                 <Cover bgImage={
