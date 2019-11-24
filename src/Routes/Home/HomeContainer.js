@@ -13,6 +13,8 @@ export default class extends Component {
         loading: true
     };
 
+
+    // lifecycle (networking) function
     async componentDidMount() {
         //네트워크 태운것
         try {
