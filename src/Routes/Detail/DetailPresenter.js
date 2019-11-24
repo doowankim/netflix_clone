@@ -41,6 +41,29 @@ const Cover = styled.div` //posterimage
   border-radius: 5px;
 `;
 
+const Data = styled.div`
+  width: 70%;
+  margin-left: 10px;
+`;
+
+const Title = styled.h3`
+  font-size: 32px;
+`;
+
+const ItemContainer = styled.div`
+  margin: 20px 0;
+`;
+
+const Divider = styled.span`
+  margin: 0 10px;
+`;
+
+const Overview = styled.p`
+  font-size: 13px;
+  opacity: 0.7;
+  line-height: 1.7;
+  width: 80%;
+`;
 
 const DetailPresenter = ({result, loading, error}) =>
     loading ? (
@@ -54,6 +77,34 @@ const DetailPresenter = ({result, loading, error}) =>
                         ? `https://image.tmdb.org/t/p/original${result.poster_path}`
                         : require("../../asset/empty.jpg")
                 } />
+                <Data>
+                    <Title>
+                        {result.original_title
+                            ? result.original_title
+                            : result.original_name}
+                    </Title>
+                    <ItemContainer>
+                        <span>
+                            {result.release_date
+                                ? result.release_date.substring(0, 10) //10번째 자리에서 substring(잘라낸다)
+                                : result.first_air_date.substring(0, 10)}
+                        </span>
+                        <Divider>•</Divider>
+                        <span>
+                            {result.runtime ? result.runtime : result.episode_run_time[0]} min
+                        </span>
+                        <Divider>•</Divider>
+                        <span>
+                            {result.genres &&
+                            result.genres.map((genre, index) => //genre로 구분해주고 index로 리턴
+                                index === result.genres.length - 1 //result에 genres가 없다면
+                                    ? genre.name
+                                    : `${genre.name} / `
+                            )}
+                        </span>
+                    </ItemContainer>
+                    <Overview>{result.overview}</Overview>
+                </Data>
             </Content>
         </Container>
     );
