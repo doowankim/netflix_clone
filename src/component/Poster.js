@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   font-size: 12px;
@@ -52,25 +53,27 @@ const Year = styled.span`
 
 
 const Poster = ({ id, title, rating, year, imageurl, isMovie=false }) => (
-    <Container>
-        <ImageContainer>
-            <Image
-                bgUrl={
-                    imageurl
-                        ? `https://image.tmdb.org/t/p/w300${imageurl}`
-                        : require("../asset/empty.jpg")
-                }
-            />
-            <Rating>
-                <span role="img" aria-label="rating">⭐️</span>
-                {" "}{rating}{" "} / {" "}10
-            </Rating>
-        </ImageContainer>
-        <Title>
-            {title.length > 18 ? `${title.substring(0, 18)}…` : title}
-        </Title>
-        <Year>{year}</Year>
-    </Container>
+    <Link to={isMovie ? `/movie/${id}` : `/tv/${id}`}>
+        <Container>
+            <ImageContainer>
+                <Image
+                    bgUrl={
+                        imageurl
+                            ? `https://image.tmdb.org/t/p/w300${imageurl}`
+                            : require("../asset/empty.jpg")
+                    }
+                />
+                <Rating>
+                    <span role="img" aria-label="rating">⭐️</span>
+                    {" "}{rating}{" "} / {" "}10
+                </Rating>
+            </ImageContainer>
+            <Title>
+                {title.length > 18 ? `${title.substring(0, 18)}…` : title}
+            </Title>
+            <Year>{year}</Year>
+        </Container>
+    </Link>
 );
 
 Poster.propTypes = {
