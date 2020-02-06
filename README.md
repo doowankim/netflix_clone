@@ -1,4 +1,4 @@
-#netflix_clone 제작
+# netflix_clone 제작
 
 ## Tool
 * 사용 언어 : HTML, JS, CSS
