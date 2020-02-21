@@ -28,3 +28,19 @@
 - [x] TV Show Detail
 - [x] Movie Detail
 - [x] Search (Movie, TV)
+
+### 써드파티 패키지
+
+| 모듈                                                                                        | 역할                                                                                                                                                                         | 사용한 부분        |
+| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [axios](https://github.com/axios/axios)                                                     | HTTP 클라이언트                                                                                                                                                              |             |
+| [bootstrap](https://github.com/twbs/bootstrap) | 웹 개발 프론트엔드 프레임워크                                                                                                                                      | -                  |
+| [prop-types](https://github.com/facebook/prop-types)                                        | React props 및 유사한 객체에 대한 런타임 유형 확인                                                                                                                           | -                  |
+| [react](https://github.com/facebook/react)                                                  | React는 사용자 인터페이스를 구축하기위한 JavaScript 라이브러리                                                                                                               | -                  |
+| [react-dom](https://github.com/facebook/react/blob/master/packages/react-dom/README.md)     | React의 DOM 및 서버 렌더러에 대한 진입 점 역할                                                                                                                               | -                  |
+| [react-helmet](https://github.com/nfl/react-helmet)                                         | HEAD에 HTML 태그 수정                                                                                                                                                        | -                  |
+| [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)                                       | React에 대한 DOM 바인딩                                                                                                                                                    | -                  |
+| [react-scripts](https://github.com/facebook/create-react-app/tree/master/packages/react-scripts)                                                   | Create react app에서 사용하는 스크립트                                                                                                                        | -                  |
+| [reactstrap](https://github.com/reactstrap/reactstrap)                                      | bootstrap을 위한 구성요소 | - |
+| [styled-components](https://github.com/styled-components/styled-components)                 | 구성 요소 연령에 대한 시각적 기본 요소. ES6 및 CSS를 사용하여 스트레스없이 앱의 스타일을 지정                                                                                | -                  |
+| [styled-reset](https://github.com/zacanger/styled-reset)                                               | 스타일 구성요소에 대한 CSS 재설정                                                                                                                                           | -                  |
