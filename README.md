@@ -44,3 +44,9 @@
 | [reactstrap](https://github.com/reactstrap/reactstrap)                                      | bootstrap을 위한 구성요소 | - |
 | [styled-components](https://github.com/styled-components/styled-components)                 | 구성 요소 연령에 대한 시각적 기본 요소. ES6 및 CSS를 사용하여 스트레스없이 앱의 스타일을 지정                                                                                | -                  |
 | [styled-reset](https://github.com/zacanger/styled-reset)                                               | 스타일 구성요소에 대한 CSS 재설정                                                                                                                                           | -                  |
+
+### 3. 결과물 스크린샷
+<img width="1421" alt="스크린샷 2020-02-25 오전 10 00 16" src="https://user-images.githubusercontent.com/55137934/75209158-ee34da80-57c0-11ea-9034-907a8b67ff57.png">
+<img width="1426" alt="스크린샷 2020-02-25 오전 10 00 34" src="https://user-images.githubusercontent.com/55137934/75209160-ef660780-57c0-11ea-8ec5-f77cd54d741c.png">
+<img width="1421" alt="스크린샷 2020-02-25 오전 10 01 03" src="https://user-images.githubusercontent.com/55137934/75209437-8cc13b80-57c1-11ea-8a94-cf824e1a5cb4.png">
+<img width="1421" alt="스크린샷 2020-02-25 오전 10 05 09" src="https://user-images.githubusercontent.com/55137934/75209164-f260f800-57c0-11ea-98ad-1bf7bf5421f9.png">
