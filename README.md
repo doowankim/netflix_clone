@@ -1,15 +1,6 @@
 <<<<<<< HEAD
-# netflix_clone 제작 https://doowankim/github.io/netflix_clone
-
-## Tool
-* 사용 언어 : HTML, JS, CSS
-* 사용 api : https://www.themoviedb.org
-
-## 기획
-### 1.의도
-* netflix 같은 영화, TV 프로그램을 공유 DB api를 이용하여 개발해보기 위함
-=======
-# netflix_clone 제작
+# netflix_clone 제작 
+* [https://doowankim/github.io/netflix_clone](https://doowankim/github.io/netflix_clone)
 
 ## Tool
 * Language & Framework : React.js
@@ -19,17 +10,11 @@
 ## 기획
 ### 1.의도
 * netflix 같은 영화, TV 프로그램을 공유 DB API를 이용하여 개발해보기 위함
->>>>>>> 195e0eab7d532b8594868448eab0754d6cfef8fa
 * react.js를 해봄으로써 나의 스킬을 쌓기 위함
 
 ### 2.페이지 구상
 
-<<<<<<< HEAD
-#### screen
-=======
 #### View
->>>>>>> 195e0eab7d532b8594868448eab0754d6cfef8fa
-
 - [x] Home
 - [x] TV Show
 - [x] Search
@@ -43,9 +28,6 @@
 - [x] Airing Today (TV)
 - [x] TV Show Detail
 - [x] Movie Detail
-<<<<<<< HEAD
-- [x] Search (Movie, TV)
-=======
 - [x] Search (Movie, TV)
 
 ### 써드파티 패키지
@@ -69,4 +51,4 @@
 <img width="1426" alt="스크린샷 2020-02-25 오전 10 00 34" src="https://user-images.githubusercontent.com/55137934/75209160-ef660780-57c0-11ea-8ec5-f77cd54d741c.png">
 <img width="1421" alt="스크린샷 2020-02-25 오전 10 01 03" src="https://user-images.githubusercontent.com/55137934/75209437-8cc13b80-57c1-11ea-8a94-cf824e1a5cb4.png">
 <img width="1421" alt="스크린샷 2020-02-25 오전 10 05 09" src="https://user-images.githubusercontent.com/55137934/75209164-f260f800-57c0-11ea-98ad-1bf7bf5421f9.png">
->>>>>>> 195e0eab7d532b8594868448eab0754d6cfef8fa
+
