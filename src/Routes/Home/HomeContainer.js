@@ -15,7 +15,7 @@ export default class extends Component {
 
 
     // lifecycle (networking) function
-    async componentDidMount() {
+    async componentDidMount() { //async, await 둘 다 반드시 promise를 반환해야 한다.
         //네트워크 태운것
         try {
             const {
